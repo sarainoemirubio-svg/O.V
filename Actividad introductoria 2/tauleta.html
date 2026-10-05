@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8"/> 
+        <title>Taula senzilla i Exercicis HTML</title>
+    </head>
+<body>
+
+    <nav id="index">
+        <h2>Índex de seccions</h2>
+        <ul>
+            <li><a href="#peliculas">Listat de pel·lícules</a></li>
+            <li><a href="#taula7">Exercici 7 (Estructura de taula 1)</a></li>
+            <li><a href="#taula8">Exercici 8 i 12 (Estructura complexa amb rowspan/colspan)</a></li>
+            <li><a href="#formulari">Formulari</a></li>
+        </ul>
+    </nav>
+
+    <hr/>
+
+    <section id="peliculas">
+        <h1>Listat de pel·lícules</h1>
+        <table border="1" bordercolor="black">
+
+            <tr>
+                <th>Títol</th>
+                <th>Gènere</th>
+                <th>Valoració</th>
+                <th>Recomanable</th>
+            </tr>
+     
+            <tr>
+                <td>Pulp Fiction</td>
+                <td>Acció/Violència</td>
+                <td>9</td>
+                <td>Sí</td>
+            </tr>
+
+            <tr>
+                <td>La vida de Brian</td>
+                <td>Comèdia</td>
+                <td>10</td>
+                <td>Sí</td>
+            </tr>
+
+            <tr>
+                <td>Crepúsculo</td>
+                <td>Acció</td>
+                <td>5</td>
+                <td>No</td>
+            </tr>
+            
+            <tr>
+                <td>Madagascar</td>
+                <td>Animació</td>
+                <td>8</td>
+                <td>Sí</td>
+            </tr>
+        </table>
+    </section>
+
+    <br/><hr/><br/>
+
+    <section id="taula7">
+        <h2>Exercici 7</h2>
+        <table border="1">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D1</td>
+            </tr>
+            <tr>
+                <td>D2</td>
+            </tr>
+            <tr>
+                <td>D3</td>
+            </tr>
+            <tr>
+                <td>D4</td>
+            </tr>
+        </table>
+    </section>
+
+    <br/><hr/><br/>
+
+
+    <section id="taula8">
+        <h2>Exercici 8 i 12 (Estructura avançada)</h2>
+        <table border="1">
+
+            <tr>
+                <td colspan="2">A</td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <table border="1">
+                        <tr><td>B1</td></tr>
+                        <tr><td>B2</td></tr>
+                        <tr><td>B3</td></tr>
+                    </table>
+                </td>
+
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>C1</td>
+                            <td>C2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <br/><hr/><br/>
+
+    <section id="formulari">
+        <h2>Formulari de contacte / opinió</h2>
+        <form id="myform">
+            <p>
+                <label for="nom">Nom d'usuari:</label><br/>
+                <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom"/>
+            </p>
+
+            <p>
+                <label>Gènere preferit:</label><br/>
+                <input type="radio" id="accio" name="genere" value="accio"/>
+                <label for="accio">Acció</label>
+                <input type="radio" id="comedia" name="genere" value="comedia"/>
+                <label for="comedia">Comèdia</label>
+            </p>
+
+            <p>
+                <label>Opcions:</label><br/>
+                <input type="checkbox" id="subscriure" name="subscriure" value="si"/>
+                <label for="subscriure">Rebre notificacions</label>
+            </p>
+
+            <p>
+                <label for="comentari">Comentari o missatge:</label><br/>
+                <textarea id="comentari" name="comentari" rows="4" cols="40" placeholder="Escriu aquí el teu missatge..."></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+    </section>
+
+    <br/><hr/><br/>
+
+    <footer>
+        <h2>Webography</h2>
+        <p>Link to W3Schools general documentation (<a href="https://www.w3schools.com" target="_blank">link</a>)</p>
+    </footer>
+
+</body>
+</html>
